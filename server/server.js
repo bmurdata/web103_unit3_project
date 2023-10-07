@@ -23,7 +23,7 @@ else if (process.env.NODE_ENV === 'production') {
 }
 
 // specify the api path for the server to use
-app.use('/ctf',EventRouter)
+app.use('/api',EventRouter)
 app.get('/',(req,res)=> {
     res.status(200).send('<h1 style="text-align: center;margin-top:50px;">CTF API</h1>')
 })

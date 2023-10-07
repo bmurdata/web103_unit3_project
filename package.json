@@ -2,6 +2,7 @@
   "name": "unitygridplaza",
   "type": "module",
   "scripts": {
+    "server":"cd server && nodemon server",
     "reset": "cd server/config && node --require dotenv/config reset.js",
     "dev": "concurrently \"cd client && vite\" \"cd server && nodemon server\"",
     "start": "cd server && node server",
